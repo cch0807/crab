@@ -1,0 +1,19 @@
+{
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true,
+    "black-formatter.args": [
+        "--line-length", "88"
+    ],
+    "flake8.args": [
+        "--max-line-length", "88",
+        "--extend-ignore", "E203"
+    ],
+    "[python]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        },
+        "editor.formatOnSave": true
+    },
+    "editor.fontFamily": "JetBrains Mono Regular,D2Coding, Consolas, 'Courier New', monospace",
+    "editor.fontLigatures": true
+}

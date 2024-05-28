@@ -1,0 +1,2 @@
+# CRAB
+Individual scraper

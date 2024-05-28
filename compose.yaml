@@ -1,0 +1,19 @@
+version: "3.8"
+
+x-timezone: &timezone
+  TZ: "Asia/Seoul"
+
+services:
+  fastapi:
+    build: .
+    restart: always
+    env_file:
+      - .env
+    environment:
+      <<: *timezone
+    networks:
+      - default
+    ports:
+      - 8000:8000
+    volumes:
+      - ./app:/build/app

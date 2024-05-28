@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "crab"
+version = "0.1.0"
+description = "Individual scraper"
+authors = ["cchlion <ckdgus11021@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.32.2"
+beautifulsoup4 = "^4.12.3"
+selenium = "^4.21.0"
+webdriver-manager = "^4.0.1"
+urllib3 = "^2.2.1"
+pyopenssl = "^24.1.0"
+fastapi = "^0.111.0"
+uvicorn = {extras = ["standard"], version = "^0.30.0"}
+aioredis = "^2.0.1"
+pydantic-settings = "^2.2.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
